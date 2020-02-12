@@ -19,7 +19,7 @@
 <p>A ajouter après la déclaration d’un widget pour l’afficher</p>
 <h2 id="label">Label</h2>
 <p>Affiche du texte ou une image</p>
-<pre><code>Label(master=None, **options)
+<pre><code>Label(master=None, options)
 </code></pre>
 <p>master : widget auquel il est attaché</p>
 <p>option notable:<br>
