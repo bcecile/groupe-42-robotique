@@ -2,11 +2,13 @@
 # -*- coding: utf-8 -*-
 
 class Arene:
-    
-    def __init__(self,longueur,largeur):
+
+    def __init__(self,longueur,largeur,robot):
         self.longueur=longueur
         self.largeur=largeur
         self.matrice=[[]]
+        self.robot=robot
+
         
         
     def construction(self,longueur,largeur):
@@ -14,6 +16,12 @@ class Arene:
         for i in range(longueur):
             tab.append([0] * largeur)
         return tab
+    
+    def getLongueur(self):
+        return self.longueur
+        
+    def getLargeur(self):
+        return self.largeur
 
 #Test
 #instanciation de la classe
