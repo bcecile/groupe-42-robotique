@@ -1,0 +1,23 @@
+#Compte-rendu de la premiere semaine du Projet
+
+-> Cécile est malade et n'a pas pu nous apporter son aide à temps
+-> Stuart a changé de groupe de Projet
+
+Le travail a été effectué particulièrement au dernier moment ce qui montre :
+    - un problème de coordination lors de l'attribution des tâches
+    - un manque d'efficacité du groupe sur la réalisation des tâches
+
+Pour ma part, je n'ai pas consacré mon temps assez efficacement pour le groupe et lorsque j'ai voulu m'investir,
+j'ai remarqué qu'on aurait pu mettre un ordre dans les tâches à effectuer ainsi qu'une contrainte de temps sur la semaine
+pour permettre à d'autres tâches de se réaliser plus naturellement :
+#Exemple : Faire le tuto de python dimanche au plus tard pour permettre à la classe Robot ou Arene de s'inspirer
+du tutoriel réalisé sur la programmation objet et faciliter la réalisation de la tâche
+
+
+Les tâches réalisées :
+    -Le tutoriel de la programmation objet sur Python a bien été effectué
+    -La classe Arene
+    -La classe Robot
+
+Les tâches non-réalisées :
+    -

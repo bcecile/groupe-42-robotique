@@ -2,12 +2,13 @@
 # -*- coding: utf-8 -*-
 
 class Arene:
-    
+
     def __init__(self,longueur,largeur,robot):
         self.longueur=longueur
         self.largeur=largeur
         self.matrice=[[]]
         self.robot=robot
+
         
         
     def construction(self,longueur,largeur):
@@ -21,7 +22,6 @@ class Arene:
         
     def getLargeur(self):
         return self.largeur
-        
 
 #Test
 #instanciation de la classe
