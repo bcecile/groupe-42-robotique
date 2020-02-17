@@ -1,0 +1,61 @@
+1-syntaxe de classe 
+	class <nom_classe> :
+    # corps de la classe
+    # ...
+
+2-Instanciation d’une classe
+
+	c1 = nom_classe()
+
+3-Déclaration d'une méthode
+
+	class <nom_classe> :
+    		def nom_methode(self, param_1, ..., param_n):
+        	# corps de la méthode...
+
+4-Appel d’une méthode
+
+	c1 = nom_classe()    # variable de type nom_classe
+	t  = c1.nom_methode (valeur_1, ..., valeur_n)
+
+REMARQUE: Le paramètre self est ici implicitement remplacé par cl lors de l’appel.
+
+
+5-EXEMPLE
+
+	rnd = 42
+
+
+class exemple_classe:
+    def methode1(self, n):
+        """simule la génération d'un nombre aléatoire
+           compris entre 0 et n-1 inclus"""
+        global rnd
+        rnd = 397204094 * rnd % 2147483647
+        return int(rnd % n)
+
+
+nb = exemple_classe()
+l1 = [nb.methode1(100) for i in range(0, 10)]
+print(l1)   # affiche [19, 46, 26, 88, 44, 56, 56, 26, 0, 8]
+
+nb2 = exemple_classe()
+l2 = [nb2.methode1(100) for i in range(0, 10)]
+print(l2)   # affiche [46, 42, 89, 66, 48, 12, 61, 84, 71, 41]
+
+>>>
+
+
+  Le résultat
+
+    [19, 46, 26, 88, 44, 56, 56, 26, 0, 8]
+    [46, 42, 89, 66, 48, 12, 61, 84, 71, 41]
+
+>>Deux instances nb et nb2 de la classe exemple_classe sont créées, chacune d’elles est utilisée pour générer aléatoirement dix nombres entiers compris entre 0 et 99 inclus. Les deux listes sont différentes puisque l’instance nb2 utilise la variable globale rnd précédemment modifiée par l’appel nb.methode1(100).
+
+
+
+
+ SOURCE "http://www.xavierdupre.fr/app/teachpyx/helpsphinx/c_classes/classes.htm"
+
+
