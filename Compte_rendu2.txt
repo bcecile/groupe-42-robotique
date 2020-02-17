@@ -1,0 +1,22 @@
+#Compte_rendu Semaine 2
+
+L'objectif pour le Client est de : 
+- Montrer une arène avec un robot qui bouge à l'intérieur
+- Une arène avec des obstacles ( objets immobiles ) à l'intérieur
+
+De plus, nous avons modifié la façon dont on allait tester les tâches à réaliser :
+-> Celui qui effectue une tâche propose également le jeu de test
+-> La partie Done de Trello doit comporter des tests concrets ( au mieux, des représentations graphiques pour le client )
+-> La différence entre Done et Testé est l'argument ci-dessus
+
+Pour améliorer la communication au sein du groupe, une rencontre le Mardi après-midi ( 13 - 14h ) pour discuter du projet a été fixé. 
+
+Le choix de la représentation grpahique pour l'instant est Tkinter. 
+
+Les tâches à faire sont : 
+-> Déplacement du Robot ( case par case dans une matrice ) 
+-> Création d'une classe Point ( arguments dx et dy, pour l'orientation du robot ) 
+-> Création d'une classe Obstacle 
+-> Affichage du Robot 
+-> Affichage de l'Arène
+-> Mettre Robot dans Arène 
