@@ -17,5 +17,5 @@ class Robot:
 		return self.angle
 
 #Test
-robot = Robot(0,0,45)
-
+robot = Robot(0,3,45)
+print'Je suis un robot en' , robot.getx(),robot.gety()
