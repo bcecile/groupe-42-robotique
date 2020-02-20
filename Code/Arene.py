@@ -4,12 +4,12 @@ from Robot import *
 class Arene:
 
     def __init__(self,longueur,largeur):
-        self.longueur=longueur
-        self.largeur=largeur
-        self.matrice=[]
+        self.longueur = longueur
+        self.largeur = largeur
+        self.matrice = []
         
 
-    def construction(self,longueur,largeur):
+    def construction(self):
         """Initialise la matrice de l'arene"""
         for i in range(self.longueur):
             self.matrice.append([0] * (self.largeur))
