@@ -1,25 +1,19 @@
-from Tkinter import Tk, Label, Button, Canvas
+from Affichage import *
+from Arene import *
+from Robot import *
 
-class MyFirstGUI:
-    def __init__(self, master):
-        self.master = master
-        master.title("A simple GUI")
+robot = Robot(4,4,45)
+print'Je suis un robot en' , robot.getx(), robot.gety(), 'avec un angle de', robot.getangle()
 
-        self.w = Canvas(master, width=400, height=100)
-        self.w.pack()
+arene = Arene(5,5)
+arene.construction(arene.getLongueur(),arene.getLargeur())
+print 'Je suis une matrice de largeur :', arene.getLargeur(), 'et de longueur :', arene.getLongueur() 
+print arene.matrice
+arene.addRobot(robot)
+print arene.matrice
 
-        self.label = Label(master, text="This is our first GUI!")
-        self.label.pack()
 
-        self.greet_button = Button(master, text="Greet", command=self.greet)
-        self.greet_button.pack()
-
-        self.close_button = Button(master, text="Close", command=master.quit)
-        self.close_button.pack()
-
-    def greet(self):
-        print("Greetings!")
-
-root = Tk()
-my_gui = MyFirstGUI(root)
-root.mainloop()
+fenetre = Tk()
+vue = Vue(fenetre, arene)
+vue.afficherArene()
+fenetre.mainloop()
