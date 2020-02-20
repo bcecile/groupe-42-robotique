@@ -1,17 +1,21 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from Robot import *
+
 class Arene:
 
-    def __init__(self,longueur,largeur):
+    def __init__(self,longueur,largeur,robot):
         self.longueur=longueur
         self.largeur=largeur
-        self.matrice=[]
-        
+        self.matrice=[[]]
+        self.robot=robot
 
+        
+        
     def construction(self,longueur,largeur):
-        for i in range(self.longueur-1):
-            self.matrice.append([0] * (self.largeur+1))
+        tab=[]
+        for i in range(longueur):
+            tab.append([0] * largeur)
+        return tab
     
     def getLongueur(self):
         return self.longueur
@@ -19,15 +23,11 @@ class Arene:
     def getLargeur(self):
         return self.largeur
 
-    def addRobot(self,robot) :
-        self.matrice[robot.getx()][robot.gety()]="r"
-        self.robot=robot
-
 #Test
 #instanciation de la classe
-#Arene = Arene(5,5)
+Arene = Arene(5,5)
 #Utilisation de la methode
-#bob = Arene.construction(Arene.longueur,Arene.largeur)
+bob = Arene.construction(Arene.longueur,Arene.largeur)
 #Presentation du tableau 
-#print(bob)
+print(bob)
 
