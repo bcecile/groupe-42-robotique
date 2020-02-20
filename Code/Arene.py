@@ -10,8 +10,9 @@ class Arene:
         
 
     def construction(self,longueur,largeur):
-        for i in range(self.longueur-1):
-            self.matrice.append([0] * (self.largeur+1))
+        """Initialise la matrice de l'arene"""
+        for i in range(self.longueur):
+            self.matrice.append([0] * (self.largeur))
     
     def getLongueur(self):
         return self.longueur
@@ -20,14 +21,10 @@ class Arene:
         return self.largeur
 
     def addRobot(self,robot) :
+        """ Place dans la matrice de l'arene le robot et le passe en attribut
+            :param robot: le robot à placer
+        """
         self.matrice[robot.getx()][robot.gety()]="r"
         self.robot=robot
 
-#Test
-#instanciation de la classe
-#Arene = Arene(5,5)
-#Utilisation de la methode
-#bob = Arene.construction(Arene.longueur,Arene.largeur)
-#Presentation du tableau 
-#print(bob)
 
