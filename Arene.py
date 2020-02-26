@@ -1,3 +1,4 @@
+
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from Obstacle import *
@@ -45,7 +46,7 @@ class Arene:
 #Test
 #instanciation de la classe
                 
-robot = Robot(1,1,0)
+robot = Robot(1,1,180)
 Arene = Arene(5,5,robot)
 
 #Utilisation de la methode
@@ -66,18 +67,18 @@ print(bob)
 
 #Placer Obstacle
 
-obstacle = Obstacle(2,3,2)
+obstacle = Obstacle(1,2,2)
 Arene.placerObstacle(obstacle.getx(),obstacle.gety(),obstacle.gettaille())
 print(bob)
 
 obstacle2 = Obstacle(1,1,1)
 Arene.placerObstacle(obstacle2.getx(),obstacle2.gety(),obstacle2.gettaille())
+print(robot.collision(1,Arene.matrice))
 
 #On fait avancer le Robot
 
-#robot.avancerRobot(2,bob)
+robot.avancerRobot(1,bob)
 
 #Resultat du deplacement
 
-#print(bob)
-
+print(bob)
