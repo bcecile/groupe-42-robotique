@@ -38,6 +38,7 @@ class Arene:
             for j in range(taille):
                 if ((self.matrice[x+i][y+j]==1)or(self.matrice[x+i][y+j]==2)):
                     print("Erreur, la case est occupee \n")
+                    return 
                 else:
                     self.matrice[x+i][y+j]=2
 
