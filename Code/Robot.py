@@ -1,12 +1,12 @@
 class Robot:
-	# Constructeur
+	"""Le robot est definit par des coordonnees x, y et un angle en degres
+	"""
 	def __init__(self,x,y,angle):
-		self.x=x
-		self.y=y
+		self.x = x
+		self.y = y
 		# angle dans le sens trigonometrique
-		self.angle=angle
+		self.angle = angle
 
-	#Methode get()
 	def getx(self):
 		return self.x
 	
@@ -15,7 +15,3 @@ class Robot:
 
 	def getangle(self):
 		return self.angle
-
-#Test
-robot = Robot(0,0,45)
-
