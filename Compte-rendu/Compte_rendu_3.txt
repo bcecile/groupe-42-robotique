@@ -1,0 +1,9 @@
+Compte-rendu semaine 3 // Groupe 42
+
+Séance de TME de jeudi : nous n'étions pas tous présents, nous n'avions pas fini exactement ce que nous avions prévu de faire pendant ce sprint.
+Nous n'avons pas tous pu mettre autant de temps qu'on le pensait dans le projet.
+
+A ce stade nous pouvons montrer au client un robot immobile dans l'arène.
+
+Nous avons prévu un sprint moins lourd pour qu'il corresponde plus à notre rythme et à notre temps disponible : objectif un robot qui se déplace en ligne droite et qui s'arrête quand il croise un obstacle.
+
