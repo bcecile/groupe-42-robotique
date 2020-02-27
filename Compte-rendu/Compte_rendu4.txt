@@ -1,0 +1,11 @@
+#Compte-rendu Semaine 4 
+
+Présence de 3 membres : Willy, Manet, Jean-Marc.
+-> Nous avons prévu des tâches pour 3 personnes pour la semaine prochaine ( ~4h30 )
+-> Soit 1h30 / personne
+
+Objectif pour le client :
+-Afficher l'arène avec le robot à l'intérieur ainsi qu'un ou plusieurs obstacles
+-Le robot pourra se déplacer ( les 4 directions cardinales ) tout en évitant toute collision avec des objets 
+
+
