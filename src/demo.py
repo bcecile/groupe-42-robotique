@@ -3,13 +3,12 @@ from arene import *
 from robot import *
 
 robot = Robot(4,4,45)
-print'Je suis un robot en' , robot.getx(), robot.gety(), 'avec un angle de', robot.getangle()
+print'Je suis un robot en' , robot.x, robot.y, 'avec un angle de', robot.angle
 
 arene = Arene(5,5)
-arene.construction()
-print 'Je suis une matrice de largeur :', arene.getLargeur(), 'et de longueur :', arene.getLongueur() 
+print 'Je suis une matrice de largeur :', arene.largeur, 'et de longueur :', arene.longueur
 print arene.matrice
-arene.addRobot(robot)
+arene.placerRobot(robot)
 print arene.matrice
 
 

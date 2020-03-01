@@ -12,7 +12,7 @@ class Vue:
         master.title("fenetre")
         master.resizable(0,0)
         self.arene = arene
-        self.canvas = Canvas(master,width=100*self.arene.getLongueur(),height=100*self.arene.getLargeur())
+        self.canvas = Canvas(master,width=100*self.arene.longueur,height=100*self.arene.largeur)
         self.canvas.pack()
     
     def afficherArene(self) :
@@ -25,4 +25,4 @@ class Vue:
         """ Dessine sur le canvas de vue une representation du robot
             param rob: le robot à dessiner
         """
-        self.canvas.create_rectangle(100*(rob.getx()+1),100*(rob.gety()+1),100*rob.getx(),100*rob.gety(), fill="yellow")
+        self.robot = self.canvas.create_rectangle(100*(rob.x+1),100*(rob.y+1),100*rob.x,100*rob.y, fill="yellow")
