@@ -4,10 +4,13 @@
 class Robot:
   """Le robot est definit par des coordonnees x, y et un angle en degres
   """
-  def __init__(self,x,y,angle):
+  def __init__(self,x,y,angle,xreel,yreel,vitesse):
       self.x=x
       self.y=y
       self.angle=angle
+      self.xreel=xreel
+      self.yreel=yreel
+      self.vitesse=vitesse
 
   def direction(self):
     """Retourne la direction du robot selon son angle
@@ -76,4 +79,3 @@ class Robot:
         if (tab[self.y-j][self.x] == 2):
           return True
     return False
-  
