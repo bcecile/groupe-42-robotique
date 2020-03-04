@@ -4,12 +4,12 @@
 class Robot:
   """Le robot est definit par des coordonnees x, y et un angle en degres
   """
-  def __init__(self,x,y,angle,xreel,yreel,vitesse):
+  def __init__(self,x,y,angle,vitesse):
       self.x=x
       self.y=y
       self.angle=angle
-      self.xreel=xreel
-      self.yreel=yreel
+      self.xreel=x
+      self.yreel=y
       self.vitesse=vitesse
 
   def direction(self):
