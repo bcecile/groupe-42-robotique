@@ -3,16 +3,18 @@ from robot import *
 
 class TestRobot(unittest.TestCase) :
 	def setUp(self) :
-		self.r1 = Robot(0,0,0)
-		self.r2 = Robot(2,0,90)
-		self.r3 = Robot(3,0,180)
-		self.r4 = Robot(4,2,270)
+		self.r1 = Robot(0,0,0,0)
+		self.r2 = Robot(2,0,90,0)
+		self.r3 = Robot(3,0,180,0)
+		self.r4 = Robot(4,2,270,0)
 		self.tab = [[0 for i in range(5)] for j in range(5)]
 
 	def test_robot(self) :
 		self.assertEqual(self.r1.x,0)
 		self.assertEqual(self.r1.y,0)
 		self.assertEqual(self.r1.angle,0)
+		self.assertEqual(self.r1.xreel,0)
+		self.assertEqual(self.r1.yreel,0) 
 
 	def test_direction(self) :
 		self.assertEqual(self.r1.direction(),'bas')
